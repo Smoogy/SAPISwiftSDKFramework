@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A32CE0681C8C420100AF56B8 /* SAPIQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CE0671C8C420100AF56B8 /* SAPIQueryBuilder.swift */; };
+		A341F0521C8D8A990029DBA8 /* BaseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0511C8D8A990029DBA8 /* BaseListing.swift */; };
+		A341F0551C8D902F0029DBA8 /* BusinessLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0541C8D902F0029DBA8 /* BusinessLogo.swift */; };
+		A341F0571C8D90B20029DBA8 /* BusinessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0561C8D90B20029DBA8 /* BusinessInfo.swift */; };
+		A341F0591C8D92EB0029DBA8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0581C8D92EB0029DBA8 /* Category.swift */; };
+		A341F05B1C8D93C90029DBA8 /* PrimaryContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F05A1C8D93C90029DBA8 /* PrimaryContact.swift */; };
+		A341F05D1C8D94580029DBA8 /* SecondaryContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F05C1C8D94580029DBA8 /* SecondaryContact.swift */; };
+		A341F05F1C8D94CD0029DBA8 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F05E1C8D94CD0029DBA8 /* Contacts.swift */; };
+		A341F0611C8D95F10029DBA8 /* PrimaryAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0601C8D95F10029DBA8 /* PrimaryAddress.swift */; };
+		A341F0631C8D97650029DBA8 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0621C8D97650029DBA8 /* Coordinates.swift */; };
+		A341F0651C8D97940029DBA8 /* GeoCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */; };
+		A341F0661C8D9CD30029DBA8 /* BaseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0511C8D8A990029DBA8 /* BaseListing.swift */; };
+		A341F0671C8D9CD30029DBA8 /* BusinessLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0541C8D902F0029DBA8 /* BusinessLogo.swift */; };
+		A341F0681C8D9CD30029DBA8 /* BusinessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0561C8D90B20029DBA8 /* BusinessInfo.swift */; };
+		A341F0691C8D9CD30029DBA8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0581C8D92EB0029DBA8 /* Category.swift */; };
+		A341F06A1C8D9CD30029DBA8 /* PrimaryContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F05A1C8D93C90029DBA8 /* PrimaryContact.swift */; };
+		A341F06B1C8D9CD30029DBA8 /* SecondaryContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F05C1C8D94580029DBA8 /* SecondaryContact.swift */; };
+		A341F06C1C8D9CD30029DBA8 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F05E1C8D94CD0029DBA8 /* Contacts.swift */; };
+		A341F06D1C8D9CD30029DBA8 /* PrimaryAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0601C8D95F10029DBA8 /* PrimaryAddress.swift */; };
+		A341F06E1C8D9CD30029DBA8 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0621C8D97650029DBA8 /* Coordinates.swift */; };
+		A341F06F1C8D9CD30029DBA8 /* GeoCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */; };
+		A3A612971C8B151F0025D0FF /* SAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668511C7DA38B007B11A6 /* SAPIConfig.swift */; };
+		A3C6684E1C7DA25C007B11A6 /* SAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6684B1C7DA25C007B11A6 /* SAPI.swift */; };
+		A3C668521C7DA38B007B11A6 /* SAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668511C7DA38B007B11A6 /* SAPIConfig.swift */; };
+		A3C668561C7DAACD007B11A6 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668531C7DAACD007B11A6 /* BaseResponse.swift */; };
+		A3C668581C7DAACD007B11A6 /* SAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668551C7DAACD007B11A6 /* SAPIResponse.swift */; };
+		A3C6685A1C7DAB67007B11A6 /* SAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668591C7DAB67007B11A6 /* SAPIHelper.swift */; };
+		A3EA5A931C8B15B800F0C9E9 /* SAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6684B1C7DA25C007B11A6 /* SAPI.swift */; };
+		A3EA5A941C8B15BB00F0C9E9 /* SAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668551C7DAACD007B11A6 /* SAPIResponse.swift */; };
+		A3EA5A951C8B15BE00F0C9E9 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668531C7DAACD007B11A6 /* BaseResponse.swift */; };
+		A3EA5A961C8B15C800F0C9E9 /* SAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCDCD61C8B0F8C0076AB62 /* SAPIError.swift */; };
+		A3F53D811C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F53D801C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift */; };
+		A3F53D831C85BEFA00B93856 /* SAPISwiftSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C668311C7DA1E6007B11A6 /* SAPISwiftSDKFramework.framework */; };
+		A3FCDCD71C8B0F8C0076AB62 /* SAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCDCD61C8B0F8C0076AB62 /* SAPIError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3F53D841C85BEFA00B93856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3C668281C7DA1E6007B11A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3C668301C7DA1E6007B11A6;
+			remoteInfo = SAPISwiftSDKFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E846FD60BE6C8D3C2A4A310 /* Pods_SAPISwiftSDKFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAPISwiftSDKFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9456D6AD03FDFEE236EA9610 /* Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		971DF7A692005FACE078595F /* Pods-SAPISwiftSDKFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		A32CE0671C8C420100AF56B8 /* SAPIQueryBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIQueryBuilder.swift; sourceTree = "<group>"; };
+		A341F0511C8D8A990029DBA8 /* BaseListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListing.swift; sourceTree = "<group>"; };
+		A341F0541C8D902F0029DBA8 /* BusinessLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLogo.swift; sourceTree = "<group>"; };
+		A341F0561C8D90B20029DBA8 /* BusinessInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessInfo.swift; sourceTree = "<group>"; };
+		A341F0581C8D92EB0029DBA8 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A341F05A1C8D93C90029DBA8 /* PrimaryContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryContact.swift; sourceTree = "<group>"; };
+		A341F05C1C8D94580029DBA8 /* SecondaryContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryContact.swift; sourceTree = "<group>"; };
+		A341F05E1C8D94CD0029DBA8 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		A341F0601C8D95F10029DBA8 /* PrimaryAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryAddress.swift; sourceTree = "<group>"; };
+		A341F0621C8D97650029DBA8 /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCoordinates.swift; sourceTree = "<group>"; };
+		A3C054F91C85BA1500979B84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3C054FB1C85BA2400979B84 /* Pods_SAPISwiftSDKFrameworkTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SAPISwiftSDKFrameworkTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_SAPISwiftSDKFrameworkTests.framework"; sourceTree = "<group>"; };
+		A3C668311C7DA1E6007B11A6 /* SAPISwiftSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAPISwiftSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C668361C7DA1E6007B11A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3C6684B1C7DA25C007B11A6 /* SAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPI.swift; sourceTree = "<group>"; };
+		A3C668511C7DA38B007B11A6 /* SAPIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIConfig.swift; sourceTree = "<group>"; };
+		A3C668531C7DAACD007B11A6 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		A3C668551C7DAACD007B11A6 /* SAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIResponse.swift; sourceTree = "<group>"; };
+		A3C668591C7DAB67007B11A6 /* SAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIHelper.swift; sourceTree = "<group>"; };
+		A3F53D7E1C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAPISwiftSDKFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F53D801C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPISwiftSDKFrameworkTests.swift; sourceTree = "<group>"; };
+		A3F53D821C85BEFA00B93856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FCDCD61C8B0F8C0076AB62 /* SAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3C6682D1C7DA1E6007B11A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F53D7B1C85BEFA00B93856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F53D831C85BEFA00B93856 /* SAPISwiftSDKFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		709BC70C3DE4AF36C6A7DB9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9456D6AD03FDFEE236EA9610 /* Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig */,
+				971DF7A692005FACE078595F /* Pods-SAPISwiftSDKFrameworkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A32CE0661C8C3EA700AF56B8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A341F0531C8D8B700029DBA8 /* Listing */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		A341F0531C8D8B700029DBA8 /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				A341F0511C8D8A990029DBA8 /* BaseListing.swift */,
+				A341F0541C8D902F0029DBA8 /* BusinessLogo.swift */,
+				A341F0561C8D90B20029DBA8 /* BusinessInfo.swift */,
+				A341F0581C8D92EB0029DBA8 /* Category.swift */,
+				A341F05A1C8D93C90029DBA8 /* PrimaryContact.swift */,
+				A341F05C1C8D94580029DBA8 /* SecondaryContact.swift */,
+				A341F05E1C8D94CD0029DBA8 /* Contacts.swift */,
+				A341F0601C8D95F10029DBA8 /* PrimaryAddress.swift */,
+				A341F0621C8D97650029DBA8 /* Coordinates.swift */,
+				A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */,
+			);
+			name = Listing;
+			sourceTree = "<group>";
+		};
+		A3C668271C7DA1E6007B11A6 = {
+			isa = PBXGroup;
+			children = (
+				A3F53D7F1C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests */,
+				A3C668321C7DA1E6007B11A6 /* Products */,
+				A3C668331C7DA1E6007B11A6 /* SAPISwiftSDKFramework */,
+				709BC70C3DE4AF36C6A7DB9F /* Pods */,
+				E2F211D989E05BC9ECF56915 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3C668321C7DA1E6007B11A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3C668311C7DA1E6007B11A6 /* SAPISwiftSDKFramework.framework */,
+				A3F53D7E1C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3C668331C7DA1E6007B11A6 /* SAPISwiftSDKFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A32CE0661C8C3EA700AF56B8 /* API */,
+				A3C668361C7DA1E6007B11A6 /* Info.plist */,
+				A3C668531C7DAACD007B11A6 /* BaseResponse.swift */,
+				A3C668551C7DAACD007B11A6 /* SAPIResponse.swift */,
+				A3C6684B1C7DA25C007B11A6 /* SAPI.swift */,
+				A3C668511C7DA38B007B11A6 /* SAPIConfig.swift */,
+				A3C668591C7DAB67007B11A6 /* SAPIHelper.swift */,
+				A3FCDCD61C8B0F8C0076AB62 /* SAPIError.swift */,
+				A32CE0671C8C420100AF56B8 /* SAPIQueryBuilder.swift */,
+			);
+			path = SAPISwiftSDKFramework;
+			sourceTree = "<group>";
+		};
+		A3F53D7F1C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3F53D801C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift */,
+				A3F53D821C85BEFA00B93856 /* Info.plist */,
+			);
+			path = SAPISwiftSDKFrameworkTests;
+			sourceTree = "<group>";
+		};
+		E2F211D989E05BC9ECF56915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3C054FB1C85BA2400979B84 /* Pods_SAPISwiftSDKFrameworkTests.framework */,
+				A3C054F91C85BA1500979B84 /* UIKit.framework */,
+				0E846FD60BE6C8D3C2A4A310 /* Pods_SAPISwiftSDKFrameworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A3C6682E1C7DA1E6007B11A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A3C668301C7DA1E6007B11A6 /* SAPISwiftSDKFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3C668451C7DA1E6007B11A6 /* Build configuration list for PBXNativeTarget "SAPISwiftSDKFramework" */;
+			buildPhases = (
+				A3C6682C1C7DA1E6007B11A6 /* Sources */,
+				A3C6682D1C7DA1E6007B11A6 /* Frameworks */,
+				A3C6682E1C7DA1E6007B11A6 /* Headers */,
+				A3C6682F1C7DA1E6007B11A6 /* Resources */,
+				A303A2AA1CBE6A72004CAA7E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAPISwiftSDKFramework;
+			productName = SAPISwiftSDKFramework;
+			productReference = A3C668311C7DA1E6007B11A6 /* SAPISwiftSDKFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3F53D7D1C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F53D861C85BEFA00B93856 /* Build configuration list for PBXNativeTarget "SAPISwiftSDKFrameworkTests" */;
+			buildPhases = (
+				A3F53D7A1C85BEFA00B93856 /* Sources */,
+				A3F53D7B1C85BEFA00B93856 /* Frameworks */,
+				A3F53D7C1C85BEFA00B93856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3F53D851C85BEFA00B93856 /* PBXTargetDependency */,
+			);
+			name = SAPISwiftSDKFrameworkTests;
+			productName = SAPISwiftSDKFrameworkTests;
+			productReference = A3F53D7E1C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3C668281C7DA1E6007B11A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Callan Bush";
+				TargetAttributes = {
+					A3C668301C7DA1E6007B11A6 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A3F53D7D1C85BEFA00B93856 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A3C6682B1C7DA1E6007B11A6 /* Build configuration list for PBXProject "SAPISwiftSDKFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A3C668271C7DA1E6007B11A6;
+			productRefGroup = A3C668321C7DA1E6007B11A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3C668301C7DA1E6007B11A6 /* SAPISwiftSDKFramework */,
+				A3F53D7D1C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3C6682F1C7DA1E6007B11A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F53D7C1C85BEFA00B93856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A303A2AA1CBE6A72004CAA7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3C6682C1C7DA1E6007B11A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A341F0651C8D97940029DBA8 /* GeoCoordinates.swift in Sources */,
+				A3C6685A1C7DAB67007B11A6 /* SAPIHelper.swift in Sources */,
+				A32CE0681C8C420100AF56B8 /* SAPIQueryBuilder.swift in Sources */,
+				A341F0521C8D8A990029DBA8 /* BaseListing.swift in Sources */,
+				A341F05B1C8D93C90029DBA8 /* PrimaryContact.swift in Sources */,
+				A3FCDCD71C8B0F8C0076AB62 /* SAPIError.swift in Sources */,
+				A341F0551C8D902F0029DBA8 /* BusinessLogo.swift in Sources */,
+				A341F05F1C8D94CD0029DBA8 /* Contacts.swift in Sources */,
+				A341F0631C8D97650029DBA8 /* Coordinates.swift in Sources */,
+				A3C668561C7DAACD007B11A6 /* BaseResponse.swift in Sources */,
+				A341F0591C8D92EB0029DBA8 /* Category.swift in Sources */,
+				A3C6684E1C7DA25C007B11A6 /* SAPI.swift in Sources */,
+				A341F05D1C8D94580029DBA8 /* SecondaryContact.swift in Sources */,
+				A341F0611C8D95F10029DBA8 /* PrimaryAddress.swift in Sources */,
+				A341F0571C8D90B20029DBA8 /* BusinessInfo.swift in Sources */,
+				A3C668581C7DAACD007B11A6 /* SAPIResponse.swift in Sources */,
+				A3C668521C7DA38B007B11A6 /* SAPIConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F53D7A1C85BEFA00B93856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EA5A951C8B15BE00F0C9E9 /* BaseResponse.swift in Sources */,
+				A341F0691C8D9CD30029DBA8 /* Category.swift in Sources */,
+				A341F0661C8D9CD30029DBA8 /* BaseListing.swift in Sources */,
+				A341F0671C8D9CD30029DBA8 /* BusinessLogo.swift in Sources */,
+				A3EA5A961C8B15C800F0C9E9 /* SAPIError.swift in Sources */,
+				A341F06F1C8D9CD30029DBA8 /* GeoCoordinates.swift in Sources */,
+				A341F06D1C8D9CD30029DBA8 /* PrimaryAddress.swift in Sources */,
+				A3A612971C8B151F0025D0FF /* SAPIConfig.swift in Sources */,
+				A3EA5A941C8B15BB00F0C9E9 /* SAPIResponse.swift in Sources */,
+				A3EA5A931C8B15B800F0C9E9 /* SAPI.swift in Sources */,
+				A341F06E1C8D9CD30029DBA8 /* Coordinates.swift in Sources */,
+				A341F06C1C8D9CD30029DBA8 /* Contacts.swift in Sources */,
+				A341F06A1C8D9CD30029DBA8 /* PrimaryContact.swift in Sources */,
+				A341F06B1C8D9CD30029DBA8 /* SecondaryContact.swift in Sources */,
+				A3F53D811C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift in Sources */,
+				A341F0681C8D9CD30029DBA8 /* BusinessInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3F53D851C85BEFA00B93856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3C668301C7DA1E6007B11A6 /* SAPISwiftSDKFramework */;
+			targetProxy = A3F53D841C85BEFA00B93856 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A3C668431C7DA1E6007B11A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SAPISwiftSDKFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3C668441C7DA1E6007B11A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SAPISwiftSDKFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3C668461C7DA1E6007B11A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_FILES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SAPISwiftSDKFramework/Info.plist;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CallanB.SAPISwiftSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3C668471C7DA1E6007B11A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_FILES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SAPISwiftSDKFramework/Info.plist;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CallanB.SAPISwiftSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+			};
+			name = Release;
+		};
+		A3F53D871C85BEFA00B93856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SAPISwiftSDKFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CallanB.SAPISwiftSDKFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3F53D881C85BEFA00B93856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SAPISwiftSDKFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CallanB.SAPISwiftSDKFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3C6682B1C7DA1E6007B11A6 /* Build configuration list for PBXProject "SAPISwiftSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3C668431C7DA1E6007B11A6 /* Debug */,
+				A3C668441C7DA1E6007B11A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3C668451C7DA1E6007B11A6 /* Build configuration list for PBXNativeTarget "SAPISwiftSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3C668461C7DA1E6007B11A6 /* Debug */,
+				A3C668471C7DA1E6007B11A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F53D861C85BEFA00B93856 /* Build configuration list for PBXNativeTarget "SAPISwiftSDKFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F53D871C85BEFA00B93856 /* Debug */,
+				A3F53D881C85BEFA00B93856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3C668281C7DA1E6007B11A6 /* Project object */;
+}
