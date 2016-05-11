@@ -7,15 +7,20 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class PrimaryContact {
+class PrimaryContact: Mappable {
     var type: String!
     var value: String!
     var description: String?
+
+    required init?(_ map: Map) {
+        
+    }
     
-    init(json: NSDictionary?) {
-        type = json!["type"] as! String
-        value = json!["value"] as! String
-        description = json?["description"] as? String
+    func mapping(map: Map) {
+        type <- map["type"]
+        value <- map["value"]
+        description <- map["description"]
     }
 }

@@ -7,13 +7,18 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class BusinessLogo {
+class BusinessLogo: Mappable {
     var url: String?
     var altText: String?
     
-    init(json: NSDictionary?) {
-        self.url = json!["url"] as? String
-        self.altText = json!["altText"] as? String
+    required init?(_ map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        url <- map["url"]
+        altText <- map["altText"]
     }
 }

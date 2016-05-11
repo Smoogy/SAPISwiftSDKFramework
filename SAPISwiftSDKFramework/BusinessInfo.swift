@@ -7,20 +7,24 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class BusinessInfo {
+class BusinessInfo: Mappable {
     var legalId: String?
     var abn: String?
     var acn: String?
     var numberOfEmployees: String?
-    var dateEstablished: String?
+    var dateEstablished: NSDate?
 
-    init(json: NSDictionary?) {
-        self.legalId = json!["legalId"] as? String
-        self.abn = json!["abn"] as? String
-        self.acn = json!["acn"] as? String
-        self.numberOfEmployees = json!["numberOfEmployees"] as? String
-        self.dateEstablished = json!["dateEstablished"] as? String
-        // TODO: Convert this ^ into an NSDate
+    required init?(_ map: Map) {
+        
+    }
+
+    func mapping(map: Map) {
+        legalId <- map["legalId"]
+        abn <- map["abn"]
+        acn <- map["acn"]
+        numberOfEmployees <- map["numberOfEmployees"]
+        dateEstablished <- (map["dateEstablished"], DateTransform())
     }
 }
