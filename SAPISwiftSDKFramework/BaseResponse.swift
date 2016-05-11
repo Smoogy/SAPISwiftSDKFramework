@@ -7,17 +7,22 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class BaseResponse : NSObject {
-    var date: String
-    var time: Int
-    var code: Int
-    var message: String
+class BaseResponse: Mappable {
+    var date: String?
+    var time: Int?
+    var code: Int?
+    var message: String?
  
-    init(json: NSDictionary) {
-        self.date = json["date"] as! String
-        self.time = json["time"] as! Int
-        self.code = json["code"] as! Int
-        self.message = json["message"] as! String
+    required init?(_ map: Map) {
+
+    }
+    
+    func mapping(map: Map) {
+        date <- map["date"]
+        time <- map["time"]
+        code <- map["code"]
+        message <- map["message"]
     }
 }

@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class SAPIResponse: BaseResponse {
-    var results: [Listing]
+    var results = [Listing]()
     var totalResults: Int!
     var currentPage: Int!
     var totalPages: Int!
@@ -17,21 +18,21 @@ class SAPIResponse: BaseResponse {
     var executedQuery: String!
     var details: NSArray!
     var count: Int!
-    
-    override init(json: NSDictionary) {
-        self.results = NSArray() as! [Listing]
 
-        super.init(json: json)
+    required init?(_ map: Map) {
+        super.init(map)
+    }
+    
+    override func mapping(map: Map) {
+        super.mapping(map)
         
-        for result in json["results"] as! NSArray {
-            self.results.append(Listing(json: result as! NSDictionary))
-        }
-        self.totalResults = json["totalResults"] as! Int
-        self.currentPage = json["currentPage"] as! Int
-        self.totalPages = json["totalPages"] as! Int
-        self.originalQuery = json["originalQuery"] as! String
-        self.executedQuery = json["executedQuery"] as! String
-        self.details = json["details"] as! NSArray
-        self.count = json["count"] as! Int
+        results <- map["results"]
+        totalResults <- map["totalResults"]
+        currentPage <- map["currentPage"]
+        totalPages <- map["totalPages"]
+        originalQuery <- map["originalQuery"]
+        executedQuery <- map["executedQuery"]
+        details <- map["details"]
+        count <- map["count"]
     }
 }

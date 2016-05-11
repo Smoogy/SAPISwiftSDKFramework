@@ -7,13 +7,18 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Coordinates {
+class Coordinates: Mappable {
     var centre: GeoCoordinates?
     var street: GeoCoordinates?
+
+    required init?(_ map: Map) {
+        
+    }
     
-    init(json: NSDictionary?) {
-        self.centre = GeoCoordinates(json: json?["centre"] as? NSDictionary)
-        self.street = GeoCoordinates(json: json?["street"] as? NSDictionary)
+    func mapping(map: Map) {
+        centre <- map["centre"]
+        street <- map["street"]
     }
 }

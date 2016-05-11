@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0D43E2CFD86E3CF2BF5756 /* Pods_SAPISwiftSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C66E291F48A7E19279057A /* Pods_SAPISwiftSDKFramework.framework */; };
 		A32CE0681C8C420100AF56B8 /* SAPIQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CE0671C8C420100AF56B8 /* SAPIQueryBuilder.swift */; };
+		A340998A1CE20532002B2973 /* ReviewSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34099891CE20532002B2973 /* ReviewSummary.swift */; };
+		A340998C1CE20620002B2973 /* ReviewSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34099891CE20532002B2973 /* ReviewSummary.swift */; };
 		A341F0521C8D8A990029DBA8 /* BaseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0511C8D8A990029DBA8 /* BaseListing.swift */; };
 		A341F0551C8D902F0029DBA8 /* BusinessLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0541C8D902F0029DBA8 /* BusinessLogo.swift */; };
 		A341F0571C8D90B20029DBA8 /* BusinessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0561C8D90B20029DBA8 /* BusinessInfo.swift */; };
@@ -28,7 +31,27 @@
 		A341F06D1C8D9CD30029DBA8 /* PrimaryAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0601C8D95F10029DBA8 /* PrimaryAddress.swift */; };
 		A341F06E1C8D9CD30029DBA8 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0621C8D97650029DBA8 /* Coordinates.swift */; };
 		A341F06F1C8D9CD30029DBA8 /* GeoCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */; };
+		A38F94881CE20493009219D0 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C069AF1CE1FDFA005577AA /* Day.swift */; };
 		A3A612971C8B151F0025D0FF /* SAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668511C7DA38B007B11A6 /* SAPIConfig.swift */; };
+		A3A7132F1CE34AA5005E970E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C069B11CE1FE6F005577AA /* Time.swift */; };
+		A3A713311CE34AE7005E970E /* BaseReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A713301CE34AE7005E970E /* BaseReview.swift */; };
+		A3A713321CE34AE7005E970E /* BaseReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A713301CE34AE7005E970E /* BaseReview.swift */; };
+		A3A713341CE34E53005E970E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A713331CE34E53005E970E /* Review.swift */; };
+		A3A713351CE34E53005E970E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A713331CE34E53005E970E /* Review.swift */; };
+		A3B711A31CD76EB50055B202 /* OrderedProductKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B671CD61C1F00222FA0 /* OrderedProductKeywords.swift */; };
+		A3B711A41CD76EB50055B202 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B691CD61C6900222FA0 /* Keyword.swift */; };
+		A3B711A51CD76EB50055B202 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B6B1CD61D3C00222FA0 /* ImageGallery.swift */; };
+		A3B711A61CD76EB50055B202 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B6D1CD61D6500222FA0 /* GalleryItem.swift */; };
+		A3B711A71CD76EB50055B202 /* ExternalLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B6F1CD61F1400222FA0 /* ExternalLinks.swift */; };
+		A3B711A81CD76EB50055B202 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B711CD61F2D00222FA0 /* Link.swift */; };
+		A3B711A91CD76ECE0055B202 /* OrderedProductKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B671CD61C1F00222FA0 /* OrderedProductKeywords.swift */; };
+		A3B711AA1CD76ECE0055B202 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B691CD61C6900222FA0 /* Keyword.swift */; };
+		A3B711AB1CD76ECE0055B202 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B6B1CD61D3C00222FA0 /* ImageGallery.swift */; };
+		A3B711AC1CD76ECE0055B202 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B6D1CD61D6500222FA0 /* GalleryItem.swift */; };
+		A3B711AD1CD76ECE0055B202 /* ExternalLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B6F1CD61F1400222FA0 /* ExternalLinks.swift */; };
+		A3B711AE1CD76ECE0055B202 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3557B711CD61F2D00222FA0 /* Link.swift */; };
+		A3C069B01CE1FDFA005577AA /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C069AF1CE1FDFA005577AA /* Day.swift */; };
+		A3C069B21CE1FE6F005577AA /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C069B11CE1FE6F005577AA /* Time.swift */; };
 		A3C6684E1C7DA25C007B11A6 /* SAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6684B1C7DA25C007B11A6 /* SAPI.swift */; };
 		A3C668521C7DA38B007B11A6 /* SAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668511C7DA38B007B11A6 /* SAPIConfig.swift */; };
 		A3C668561C7DAACD007B11A6 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668531C7DAACD007B11A6 /* BaseResponse.swift */; };
@@ -41,6 +64,7 @@
 		A3F53D811C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F53D801C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift */; };
 		A3F53D831C85BEFA00B93856 /* SAPISwiftSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C668311C7DA1E6007B11A6 /* SAPISwiftSDKFramework.framework */; };
 		A3FCDCD71C8B0F8C0076AB62 /* SAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCDCD61C8B0F8C0076AB62 /* SAPIError.swift */; };
+		D7FBAA41165434E52F77446C /* Pods_SAPISwiftSDKFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E846FD60BE6C8D3C2A4A310 /* Pods_SAPISwiftSDKFrameworkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +78,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D4C5F209683D3FCD858FF2 /* Pods-SAPISwiftSDKFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFramework/Pods-SAPISwiftSDKFramework.release.xcconfig"; sourceTree = "<group>"; };
 		0E846FD60BE6C8D3C2A4A310 /* Pods_SAPISwiftSDKFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAPISwiftSDKFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C66E291F48A7E19279057A /* Pods_SAPISwiftSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAPISwiftSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9456D6AD03FDFEE236EA9610 /* Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		971DF7A692005FACE078595F /* Pods-SAPISwiftSDKFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		A32CE0671C8C420100AF56B8 /* SAPIQueryBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIQueryBuilder.swift; sourceTree = "<group>"; };
+		A34099891CE20532002B2973 /* ReviewSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewSummary.swift; sourceTree = "<group>"; };
 		A341F0511C8D8A990029DBA8 /* BaseListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListing.swift; sourceTree = "<group>"; };
 		A341F0541C8D902F0029DBA8 /* BusinessLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLogo.swift; sourceTree = "<group>"; };
 		A341F0561C8D90B20029DBA8 /* BusinessInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessInfo.swift; sourceTree = "<group>"; };
@@ -68,8 +95,18 @@
 		A341F0601C8D95F10029DBA8 /* PrimaryAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryAddress.swift; sourceTree = "<group>"; };
 		A341F0621C8D97650029DBA8 /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCoordinates.swift; sourceTree = "<group>"; };
+		A3557B671CD61C1F00222FA0 /* OrderedProductKeywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedProductKeywords.swift; sourceTree = "<group>"; };
+		A3557B691CD61C6900222FA0 /* Keyword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		A3557B6B1CD61D3C00222FA0 /* ImageGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
+		A3557B6D1CD61D6500222FA0 /* GalleryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
+		A3557B6F1CD61F1400222FA0 /* ExternalLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalLinks.swift; sourceTree = "<group>"; };
+		A3557B711CD61F2D00222FA0 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		A3A713301CE34AE7005E970E /* BaseReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseReview.swift; sourceTree = "<group>"; };
+		A3A713331CE34E53005E970E /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		A3C054F91C85BA1500979B84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3C054FB1C85BA2400979B84 /* Pods_SAPISwiftSDKFrameworkTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SAPISwiftSDKFrameworkTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_SAPISwiftSDKFrameworkTests.framework"; sourceTree = "<group>"; };
+		A3C069AF1CE1FDFA005577AA /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		A3C069B11CE1FE6F005577AA /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		A3C668311C7DA1E6007B11A6 /* SAPISwiftSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAPISwiftSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C668361C7DA1E6007B11A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3C6684B1C7DA25C007B11A6 /* SAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPI.swift; sourceTree = "<group>"; };
@@ -81,6 +118,7 @@
 		A3F53D801C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPISwiftSDKFrameworkTests.swift; sourceTree = "<group>"; };
 		A3F53D821C85BEFA00B93856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3FCDCD61C8B0F8C0076AB62 /* SAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIError.swift; sourceTree = "<group>"; };
+		CF65B4CE0E4C4BD9A07F97C0 /* Pods-SAPISwiftSDKFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFramework/Pods-SAPISwiftSDKFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0D43E2CFD86E3CF2BF5756 /* Pods_SAPISwiftSDKFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F53D831C85BEFA00B93856 /* SAPISwiftSDKFramework.framework in Frameworks */,
+				D7FBAA41165434E52F77446C /* Pods_SAPISwiftSDKFrameworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +147,8 @@
 			children = (
 				9456D6AD03FDFEE236EA9610 /* Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig */,
 				971DF7A692005FACE078595F /* Pods-SAPISwiftSDKFrameworkTests.release.xcconfig */,
+				CF65B4CE0E4C4BD9A07F97C0 /* Pods-SAPISwiftSDKFramework.debug.xcconfig */,
+				00D4C5F209683D3FCD858FF2 /* Pods-SAPISwiftSDKFramework.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -132,6 +174,17 @@
 				A341F0601C8D95F10029DBA8 /* PrimaryAddress.swift */,
 				A341F0621C8D97650029DBA8 /* Coordinates.swift */,
 				A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */,
+				A3557B671CD61C1F00222FA0 /* OrderedProductKeywords.swift */,
+				A3557B691CD61C6900222FA0 /* Keyword.swift */,
+				A3557B6B1CD61D3C00222FA0 /* ImageGallery.swift */,
+				A3557B6D1CD61D6500222FA0 /* GalleryItem.swift */,
+				A3557B6F1CD61F1400222FA0 /* ExternalLinks.swift */,
+				A3557B711CD61F2D00222FA0 /* Link.swift */,
+				A3C069AF1CE1FDFA005577AA /* Day.swift */,
+				A3C069B11CE1FE6F005577AA /* Time.swift */,
+				A34099891CE20532002B2973 /* ReviewSummary.swift */,
+				A3A713301CE34AE7005E970E /* BaseReview.swift */,
+				A3A713331CE34E53005E970E /* Review.swift */,
 			);
 			name = Listing;
 			sourceTree = "<group>";
@@ -187,6 +240,7 @@
 				A3C054FB1C85BA2400979B84 /* Pods_SAPISwiftSDKFrameworkTests.framework */,
 				A3C054F91C85BA1500979B84 /* UIKit.framework */,
 				0E846FD60BE6C8D3C2A4A310 /* Pods_SAPISwiftSDKFrameworkTests.framework */,
+				22C66E291F48A7E19279057A /* Pods_SAPISwiftSDKFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,11 +262,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3C668451C7DA1E6007B11A6 /* Build configuration list for PBXNativeTarget "SAPISwiftSDKFramework" */;
 			buildPhases = (
+				E3A3B7010EBEFEED96BFE931 /* Check Pods Manifest.lock */,
 				A3C6682C1C7DA1E6007B11A6 /* Sources */,
 				A3C6682D1C7DA1E6007B11A6 /* Frameworks */,
 				A3C6682E1C7DA1E6007B11A6 /* Headers */,
 				A3C6682F1C7DA1E6007B11A6 /* Resources */,
 				A303A2AA1CBE6A72004CAA7E /* ShellScript */,
+				124311AF424AC37FE2268D3F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3F53D861C85BEFA00B93856 /* Build configuration list for PBXNativeTarget "SAPISwiftSDKFrameworkTests" */;
 			buildPhases = (
+				19BFCCC35E300EA65DA5001D /* Check Pods Manifest.lock */,
 				A3F53D7A1C85BEFA00B93856 /* Sources */,
 				A3F53D7B1C85BEFA00B93856 /* Frameworks */,
 				A3F53D7C1C85BEFA00B93856 /* Resources */,
+				9D9CFE983A474AC6BEC34C85 /* Embed Pods Frameworks */,
+				9DE4511B0E8EBCC6E598358A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,6 +354,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		124311AF424AC37FE2268D3F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAPISwiftSDKFramework/Pods-SAPISwiftSDKFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19BFCCC35E300EA65DA5001D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9CFE983A474AC6BEC34C85 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE4511B0E8EBCC6E598358A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A303A2AA1CBE6A72004CAA7E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +427,21 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		E3A3B7010EBEFEED96BFE931 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -317,21 +451,32 @@
 			files = (
 				A341F0651C8D97940029DBA8 /* GeoCoordinates.swift in Sources */,
 				A3C6685A1C7DAB67007B11A6 /* SAPIHelper.swift in Sources */,
+				A3B711A61CD76EB50055B202 /* GalleryItem.swift in Sources */,
+				A3C069B01CE1FDFA005577AA /* Day.swift in Sources */,
 				A32CE0681C8C420100AF56B8 /* SAPIQueryBuilder.swift in Sources */,
 				A341F0521C8D8A990029DBA8 /* BaseListing.swift in Sources */,
 				A341F05B1C8D93C90029DBA8 /* PrimaryContact.swift in Sources */,
+				A3C069B21CE1FE6F005577AA /* Time.swift in Sources */,
+				A3B711A31CD76EB50055B202 /* OrderedProductKeywords.swift in Sources */,
+				A3A713341CE34E53005E970E /* Review.swift in Sources */,
 				A3FCDCD71C8B0F8C0076AB62 /* SAPIError.swift in Sources */,
+				A340998A1CE20532002B2973 /* ReviewSummary.swift in Sources */,
 				A341F0551C8D902F0029DBA8 /* BusinessLogo.swift in Sources */,
 				A341F05F1C8D94CD0029DBA8 /* Contacts.swift in Sources */,
 				A341F0631C8D97650029DBA8 /* Coordinates.swift in Sources */,
 				A3C668561C7DAACD007B11A6 /* BaseResponse.swift in Sources */,
+				A3B711A81CD76EB50055B202 /* Link.swift in Sources */,
 				A341F0591C8D92EB0029DBA8 /* Category.swift in Sources */,
 				A3C6684E1C7DA25C007B11A6 /* SAPI.swift in Sources */,
 				A341F05D1C8D94580029DBA8 /* SecondaryContact.swift in Sources */,
 				A341F0611C8D95F10029DBA8 /* PrimaryAddress.swift in Sources */,
 				A341F0571C8D90B20029DBA8 /* BusinessInfo.swift in Sources */,
+				A3B711A51CD76EB50055B202 /* ImageGallery.swift in Sources */,
 				A3C668581C7DAACD007B11A6 /* SAPIResponse.swift in Sources */,
 				A3C668521C7DA38B007B11A6 /* SAPIConfig.swift in Sources */,
+				A3B711A71CD76EB50055B202 /* ExternalLinks.swift in Sources */,
+				A3A713311CE34AE7005E970E /* BaseReview.swift in Sources */,
+				A3B711A41CD76EB50055B202 /* Keyword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,14 +488,25 @@
 				A341F0691C8D9CD30029DBA8 /* Category.swift in Sources */,
 				A341F0661C8D9CD30029DBA8 /* BaseListing.swift in Sources */,
 				A341F0671C8D9CD30029DBA8 /* BusinessLogo.swift in Sources */,
+				A3B711A91CD76ECE0055B202 /* OrderedProductKeywords.swift in Sources */,
 				A3EA5A961C8B15C800F0C9E9 /* SAPIError.swift in Sources */,
+				A340998C1CE20620002B2973 /* ReviewSummary.swift in Sources */,
+				A3A7132F1CE34AA5005E970E /* Time.swift in Sources */,
 				A341F06F1C8D9CD30029DBA8 /* GeoCoordinates.swift in Sources */,
+				A3B711AA1CD76ECE0055B202 /* Keyword.swift in Sources */,
 				A341F06D1C8D9CD30029DBA8 /* PrimaryAddress.swift in Sources */,
+				A38F94881CE20493009219D0 /* Day.swift in Sources */,
+				A3A713321CE34AE7005E970E /* BaseReview.swift in Sources */,
 				A3A612971C8B151F0025D0FF /* SAPIConfig.swift in Sources */,
 				A3EA5A941C8B15BB00F0C9E9 /* SAPIResponse.swift in Sources */,
 				A3EA5A931C8B15B800F0C9E9 /* SAPI.swift in Sources */,
+				A3B711AD1CD76ECE0055B202 /* ExternalLinks.swift in Sources */,
 				A341F06E1C8D9CD30029DBA8 /* Coordinates.swift in Sources */,
 				A341F06C1C8D9CD30029DBA8 /* Contacts.swift in Sources */,
+				A3B711AE1CD76ECE0055B202 /* Link.swift in Sources */,
+				A3A713351CE34E53005E970E /* Review.swift in Sources */,
+				A3B711AB1CD76ECE0055B202 /* ImageGallery.swift in Sources */,
+				A3B711AC1CD76ECE0055B202 /* GalleryItem.swift in Sources */,
 				A341F06A1C8D9CD30029DBA8 /* PrimaryContact.swift in Sources */,
 				A341F06B1C8D9CD30029DBA8 /* SecondaryContact.swift in Sources */,
 				A3F53D811C85BEFA00B93856 /* SAPISwiftSDKFrameworkTests.swift in Sources */,
@@ -462,6 +618,7 @@
 		};
 		A3C668461C7DA1E6007B11A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF65B4CE0E4C4BD9A07F97C0 /* Pods-SAPISwiftSDKFramework.debug.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -490,6 +647,7 @@
 		};
 		A3C668471C7DA1E6007B11A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D4C5F209683D3FCD858FF2 /* Pods-SAPISwiftSDKFramework.release.xcconfig */;
 			buildSettings = {
 				APPLY_RULES_IN_COPY_FILES = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -517,6 +675,7 @@
 		};
 		A3F53D871C85BEFA00B93856 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9456D6AD03FDFEE236EA9610 /* Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SAPISwiftSDKFrameworkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -528,6 +687,7 @@
 		};
 		A3F53D881C85BEFA00B93856 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971DF7A692005FACE078595F /* Pods-SAPISwiftSDKFrameworkTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SAPISwiftSDKFrameworkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;

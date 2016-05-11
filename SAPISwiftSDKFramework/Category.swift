@@ -7,15 +7,20 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Category {
+class Category: Mappable {
     var id: String!
     var name: String!
     var sensitive: Bool?
-    
-    init(json: NSDictionary?) {
-        self.id = json!["id"] as! String
-        self.name = json!["name"] as! String
-        self.sensitive = json!["sensitive"] as? Bool
+
+    required init?(_ map: Map) {
+        
+    }
+
+    func mapping(map: Map) {
+        id <- map["id"]
+        name <- map["name"]
+        sensitive <- map["sensitive"]
     }
 }

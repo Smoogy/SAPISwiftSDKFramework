@@ -7,15 +7,18 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class OrderedSecondaryContact {
+class OrderedSecondaryContact: Mappable {
     var name: String!
     var contacts: [Contacts]!
+
+    required init?(_ map: Map) {
+        
+    }
     
-    init(json: NSDictionary?) {
-        self.name = json!["name"] as! String
-        for contact in json!["contacts"] as! NSArray {
-            self.contacts.append(Contacts(json: contact as? NSDictionary))
-        }
+    func mapping(map: Map) {
+        name <- map["name"]
+        contacts <- map["contacts"]
     }
 }

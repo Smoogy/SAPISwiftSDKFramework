@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class SAPI {
     var url: NSURL
@@ -77,6 +78,7 @@ class SAPI {
     private func performSearch (inputUrl: NSURL!) -> SAPIResponse {
         let jdata = NSData(contentsOfURL: inputUrl)!
         var results: SAPIResponse!
+        debugPrint("Attempting search with the URL: \(inputUrl)")
         
         do {
             try results = parseJSON(jdata)
@@ -93,7 +95,7 @@ class SAPI {
     private func parseJSON(inputData: NSData) throws -> SAPIResponse {
         let jsonData: AnyObject = try NSJSONSerialization.JSONObjectWithData(inputData, options: .MutableContainers)
         if let dict = jsonData as? NSDictionary {
-            return SAPIResponse(json: dict)
+            return Mapper<SAPIResponse>().map(jsonData)!
         }
         else {
             throw ErrorList.JSONError
