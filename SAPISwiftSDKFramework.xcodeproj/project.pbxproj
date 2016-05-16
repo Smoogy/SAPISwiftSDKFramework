@@ -153,15 +153,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A32CE0661C8C3EA700AF56B8 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				A341F0531C8D8B700029DBA8 /* Listing */,
-			);
-			name = API;
-			sourceTree = "<group>";
-		};
-		A341F0531C8D8B700029DBA8 /* Listing */ = {
+		A32CE0661C8C3EA700AF56B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A341F0511C8D8A990029DBA8 /* BaseListing.swift */,
@@ -185,6 +177,14 @@
 				A34099891CE20532002B2973 /* ReviewSummary.swift */,
 				A3A713301CE34AE7005E970E /* BaseReview.swift */,
 				A3A713331CE34E53005E970E /* Review.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A341F0531C8D8B700029DBA8 /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				A32CE0661C8C3EA700AF56B8 /* Models */,
 			);
 			name = Listing;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 		A3C668331C7DA1E6007B11A6 /* SAPISwiftSDKFramework */ = {
 			isa = PBXGroup;
 			children = (
-				A32CE0661C8C3EA700AF56B8 /* API */,
+				A341F0531C8D8B700029DBA8 /* Listing */,
 				A3C668361C7DA1E6007B11A6 /* Info.plist */,
 				A3C668531C7DAACD007B11A6 /* BaseResponse.swift */,
 				A3C668551C7DAACD007B11A6 /* SAPIResponse.swift */,
