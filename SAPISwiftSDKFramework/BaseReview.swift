@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class BaseReview: Mappable {
-    var namespace: String!
-    var ratingImageUrl: String?
-    var ratingSmallImageUrl: String?
+public class BaseReview: Mappable {
+    public var namespace: String!
+    public var ratingImageUrl: String?
+    public var ratingSmallImageUrl: String?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
 
     }
 
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         namespace <- map["namespace"]
         ratingImageUrl <- map["ratingImageUrl"]
         ratingSmallImageUrl <- map["ratingSmallImageUrl"]        

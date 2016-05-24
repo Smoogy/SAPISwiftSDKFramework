@@ -9,6 +9,5 @@
 import Foundation
 
 enum ErrorList: ErrorType {
-    case JSONError
+    case JSONError(description: String)
 }
-

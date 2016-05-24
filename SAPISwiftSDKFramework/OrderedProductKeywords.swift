@@ -9,12 +9,12 @@
 import Foundation
 import ObjectMapper
 
-class OrderedProductKeywords: Keyword {
-    required init?(_ map: Map) {
+public class OrderedProductKeywords: Keyword {
+    required public init?(_ map: Map) {
         super.init(map)
     }
 
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map)
     }
 }

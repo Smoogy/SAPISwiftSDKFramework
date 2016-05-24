@@ -9,22 +9,22 @@
 import Foundation
 import ObjectMapper
 
-class PrimaryAddress: Mappable {
-    var type: String!
-    var addressLine: String?
-    var suburb: String!
-    var postcode: String!
-    var latitude: String?
-    var longitude: String?
-    var geoCodeGranularity: String!
-    var mappable: Bool!
-    var coordinates: Coordinates?
+public class PrimaryAddress: Mappable {
+    public var type: String!
+    public var addressLine: String?
+    public var suburb: String!
+    public var postcode: String!
+    public var latitude: String?
+    public var longitude: String?
+    public var geoCodeGranularity: String!
+    public var mappable: Bool!
+    public var coordinates: Coordinates?
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         type <- map["type"]
         addressLine <- map["addressLine"]
         suburb <- map["suburb"]

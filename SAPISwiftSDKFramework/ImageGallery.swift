@@ -9,14 +9,14 @@
 import Foundation
 import ObjectMapper
 
-class ImageGallery: Mappable {
-    var items: [GalleryItem]?
+public class ImageGallery: Mappable {
+    public var items: [GalleryItem]?
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         items <- map["items"]
     }
 }

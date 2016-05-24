@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class ReviewSummary: BaseReview {
-    var reviewCount: Int!
-    var businessPageUrl: String?
-    var averageRating: Double?
+public class ReviewSummary: BaseReview {
+    public var reviewCount: Int!
+    public var businessPageUrl: String?
+    public var averageRating: Double?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         super.init(map)
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map)
 
         reviewCount <- map["reviewCount"]

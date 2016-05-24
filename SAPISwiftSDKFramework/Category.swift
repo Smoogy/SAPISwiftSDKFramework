@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class Category: Mappable {
-    var id: String!
-    var name: String!
-    var sensitive: Bool?
+public class Category: Mappable {
+    public var id: String!
+    public var name: String!
+    public var sensitive: Bool?
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
 
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         id <- map["id"]
         name <- map["name"]
         sensitive <- map["sensitive"]

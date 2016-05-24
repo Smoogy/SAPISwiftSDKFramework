@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class Time: Mappable {
-    var open: NSDate!
-    var close: NSDate!
+public class Time: Mappable {
+    public var open: NSDate!
+    public var close: NSDate!
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
 
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         open <- (map["open"], DateTransform())
         close <- (map["close"], DateTransform())
     }

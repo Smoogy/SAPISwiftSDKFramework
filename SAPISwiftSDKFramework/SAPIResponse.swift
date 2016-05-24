@@ -9,21 +9,21 @@
 import Foundation
 import ObjectMapper
 
-class SAPIResponse: BaseResponse {
-    var results = [Listing]()
-    var totalResults: Int!
-    var currentPage: Int!
-    var totalPages: Int!
-    var originalQuery: String!
-    var executedQuery: String!
-    var details: NSArray!
-    var count: Int!
+public class SAPIResponse: BaseResponse {
+    public var results = [Listing]()
+    public var totalResults: Int!
+    public var currentPage: Int!
+    public var totalPages: Int!
+    public var originalQuery: String!
+    public var executedQuery: String!
+    public var details: NSArray!
+    public var count: Int!
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         super.init(map)
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map)
         
         results <- map["results"]

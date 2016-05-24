@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class BusinessLogo: Mappable {
-    var url: String?
-    var altText: String?
+public class BusinessLogo: Mappable {
+    public var url: String?
+    public var altText: String?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         url <- map["url"]
         altText <- map["altText"]
     }

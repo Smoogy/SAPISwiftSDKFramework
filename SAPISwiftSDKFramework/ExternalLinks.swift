@@ -9,14 +9,14 @@
 import Foundation
 import ObjectMapper
 
-class ExternalLinks: Mappable {
-    var links: [Link]?
+public class ExternalLinks: Mappable {
+    public var links: [Link]?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
 
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         links <- map["links"]
     }    
 }

@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class Contacts: Mappable {
-    var type: String!
-    var value: String!
-    var description: String?
+public class Contacts: Mappable {
+    public var type: String!
+    public var value: String!
+    public var description: String?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
 
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         type <- map["type"]
         value <- map["value"]
         description <- map["description"]

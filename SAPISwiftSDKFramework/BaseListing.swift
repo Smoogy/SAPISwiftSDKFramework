@@ -9,36 +9,36 @@
 import Foundation
 import ObjectMapper
 
-class Listing: Mappable {
-    var id: String!
-    var name: String!
-    var shortDescriptor: String?
-    var mediumDescriptor: String?
-    var serviceNotes: String?
-    var detailsLink: String!
-    var pureMobileBusiness: Bool?
-    var pmbServicingMessage: String?
-    var priceQualifier: String?
-    var hasExposureProducts: Bool?
-    var businessLogo: BusinessLogo?
-    var businessInfo: BusinessInfo?
-    var categories: [Category]?
-    var primaryContacts: [Contacts]!
-    var orderedSecondaryContacts: [OrderedSecondaryContact]?
-    var primaryAddress: PrimaryAddress? /// This should not be optional,
+public class Listing: Mappable {
+    public var id: String!
+    public var name: String!
+    public var shortDescriptor: String?
+    public var mediumDescriptor: String?
+    public var serviceNotes: String?
+    public var detailsLink: String!
+    public var pureMobileBusiness: Bool?
+    public var pmbServicingMessage: String?
+    public var priceQualifier: String?
+    public var hasExposureProducts: Bool?
+    public var businessLogo: BusinessLogo?
+    public var businessInfo: BusinessInfo?
+    public var categories: [Category]?
+    public var primaryContacts: [Contacts]!
+    public var orderedSecondaryContacts: [OrderedSecondaryContact]?
+    public var primaryAddress: PrimaryAddress? /// This should not be optional,
     /// according to http://developers.sensis.com.au/docs/reference/Listing_Schema
-    var additionalAddresses: [PrimaryAddress]?
-    var orderedProductKeywords: [OrderedProductKeywords]?
-    var reportingId: String?
-    var openingHours: [Day]?
-    var distance: Double?
-    var reviewSummaries: [ReviewSummary]?
+    public var additionalAddresses: [PrimaryAddress]?
+    public var orderedProductKeywords: [OrderedProductKeywords]?
+    public var reportingId: String?
+    public var openingHours: [Day]?
+    public var distance: Double?
+    public var reviewSummaries: [ReviewSummary]?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         categories <- map["categories"]
         id <- map["id"]
         name <- map["name"]

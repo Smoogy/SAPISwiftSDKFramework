@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SAPIHelper {
+public class SAPIHelper {
     func toLowerCase(str: String) -> String {
         return str.lowercaseString
     }

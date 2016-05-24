@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class Day: Mappable {
-    var status: String! // TODO: Change to enum
-    var times: [Time]?
+public class Day: Mappable {
+    public var status: String! // TODO: Change to enum
+    public var times: [Time]?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         status <- map["status"]
         times <- map["times"]
     }

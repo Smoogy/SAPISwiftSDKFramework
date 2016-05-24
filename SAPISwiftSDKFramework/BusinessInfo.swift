@@ -9,18 +9,18 @@
 import Foundation
 import ObjectMapper
 
-class BusinessInfo: Mappable {
-    var legalId: String?
-    var abn: String?
-    var acn: String?
-    var numberOfEmployees: String?
-    var dateEstablished: NSDate?
+public class BusinessInfo: Mappable {
+    public var legalId: String?
+    public var abn: String?
+    public var acn: String?
+    public var numberOfEmployees: String?
+    public var dateEstablished: NSDate?
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
 
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         legalId <- map["legalId"]
         abn <- map["abn"]
         acn <- map["acn"]

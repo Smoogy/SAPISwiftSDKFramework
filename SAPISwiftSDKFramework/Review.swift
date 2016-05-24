@@ -9,18 +9,18 @@
 import Foundation
 import ObjectMapper
 
-class Review: BaseReview {
-    var text: String!
-    var reviewTimestamp: String!
-    var reviewerName: String?
-    var reviewerAvatarUrl: String?
-    var rating: Int?
+public class Review: BaseReview {
+    public var text: String!
+    public var reviewTimestamp: String!
+    public var reviewerName: String?
+    public var reviewerAvatarUrl: String?
+    public var rating: Int?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         super.init(map)
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map)
 
         text <- map["text"]

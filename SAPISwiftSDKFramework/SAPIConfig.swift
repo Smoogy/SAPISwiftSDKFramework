@@ -8,18 +8,18 @@
 
 import Foundation
 
-class SAPIConfig {
-    var url: NSURL {
+public class SAPIConfig {
+    public var url: NSURL {
         get {
             var base: String =  "\(self.baseUrl)\(self.apiKey)"
             
-            if (page >= 1) {
+            if page >= 1 {
                 base += "&page=\(self.page)"
             }
-            if (rows >= 1) {
+            if rows >= 1 {
                 base += "&rows=\(self.rows)"
             }
-            if (!query.isEmpty) {
+            if !query.isEmpty {
                 base += "&query=\(self.query)"
             }
             
@@ -27,11 +27,11 @@ class SAPIConfig {
         }
     }
 
-    var page: Int = 0
+    public var page: Int = 0
 
-    var rows: Int = 0
+    public var rows: Int = 0
 
-    var query: String = ""
+    public var query: String = ""
 
     private var baseUrl: String {
         get {

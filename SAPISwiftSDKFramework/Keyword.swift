@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class Keyword: Mappable {
-    var label: String!
-    var values: [String]!
+public class Keyword: Mappable {
+    public var label: String!
+    public var values: [String]!
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
 
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         label <- map["label"]
         values <- map["values"]
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SAPIQueryBuilder {
+public class SAPIQueryBuilder {
     func appendQuery(url: String, query: String) -> String {
         return "\(url)&query=\(query)"
     }

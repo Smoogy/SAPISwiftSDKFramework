@@ -9,10 +9,10 @@
 import Foundation
 import ObjectMapper
 
-class SAPI {
-    var url: NSURL
-    var config: SAPIConfig = SAPIConfig()
-    var page: Int {
+public class SAPI {
+    public var url: NSURL
+    public var config: SAPIConfig = SAPIConfig()
+    public var page: Int {
         get {
             return config.page
         }
@@ -20,7 +20,7 @@ class SAPI {
             config.page = value
         }
     }
-    var rows: Int {
+    public var rows: Int {
         get {
             return config.rows
         }
@@ -28,7 +28,7 @@ class SAPI {
             config.rows = value
         }
     }
-    var query: String {
+    public var query: String {
         get {
             return config.query
         }
@@ -38,26 +38,26 @@ class SAPI {
     }
     
     /// CONSTRUCTORS
-    init(page: Int) {
+    public init(page: Int) {
         config.page = page
 
         self.url = config.url
     }
     
-    init(rows: Int) {
+    public init(rows: Int) {
         config.rows = rows
         
         self.url = config.url
     }
     
-    init(page: Int, rows: Int) {
+    public init(page: Int, rows: Int) {
         config.page = page
         config.rows = rows
 
         self.url = config.url
     }
     
-    init(page: Int, rows: Int, query: String) {
+    public init(page: Int, rows: Int, query: String) {
         config.page = page
         config.rows = rows
         config.query = query
@@ -65,16 +65,19 @@ class SAPI {
         self.url = config.url
     }
     
-    convenience init() {
+    convenience public init() {
         self.init(page: 1, rows: 100, query: "")
     }
     
-    /// PUBLIC METHODS
-    func performSearch() -> SAPIResponse {
+    /**
+     Performs search against the SAPI Search endpoint.
+     
+     - returns: An SAPIResponse object.
+     */
+    public func performSearch() -> SAPIResponse {
         return self.performSearch(url)
     }
     
-    /// PRIVATE METHODS
     private func performSearch (inputUrl: NSURL!) -> SAPIResponse {
         let jdata = NSData(contentsOfURL: inputUrl)!
         var results: SAPIResponse!
@@ -82,11 +85,11 @@ class SAPI {
         
         do {
             try results = parseJSON(jdata)
-        } catch ErrorList.JSONError {
-            print("An error parsing the JSON occured.")
+        } catch ErrorList.JSONError (let description) {
+            print(description)
         }
         catch {
-            print("An error occured.")
+            print("An error occurred.")
         }
     
         return results
@@ -94,11 +97,15 @@ class SAPI {
 
     private func parseJSON(inputData: NSData) throws -> SAPIResponse {
         let jsonData: AnyObject = try NSJSONSerialization.JSONObjectWithData(inputData, options: .MutableContainers)
-        if let dict = jsonData as? NSDictionary {
-            return Mapper<SAPIResponse>().map(jsonData)!
-        }
-        else {
-            throw ErrorList.JSONError
+
+        if let _ = jsonData as? NSDictionary {
+            if let map = Mapper<SAPIResponse>().map(jsonData) as SAPIResponse? {
+                return map
+            } else {
+                throw ErrorList.JSONError(description: "Error occurred when mapping JSON to object")
+            }
+        } else {
+            throw ErrorList.JSONError(description: "Error occurred when casting JSON to an NSDictionary")
         }
     }
 }

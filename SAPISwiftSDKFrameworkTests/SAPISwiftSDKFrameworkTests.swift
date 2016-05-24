@@ -9,6 +9,8 @@
 import Quick
 import Nimble
 
+// WARNING: You really shouldn't be running these tests against the live API - they should
+// be mocked! Once a good Swift mocking framework is released, I'll refactor this.
 class SAPISwiftSDKFrameworkSpec: QuickSpec {
     override func spec() {
         describe("The SAPI class") {

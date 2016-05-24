@@ -1,3 +1,3 @@
 # SAPISwiftSDKFramework
 
-#Coming soon!
+Docs are coming real soon, I promise!

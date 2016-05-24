@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class Coordinates: Mappable {
-    var centre: GeoCoordinates?
-    var street: GeoCoordinates?
+public class Coordinates: Mappable {
+    public var centre: GeoCoordinates?
+    public var street: GeoCoordinates?
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         centre <- map["centre"]
         street <- map["street"]
     }

@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class OrderedSecondaryContact: Mappable {
-    var name: String!
-    var contacts: [Contacts]!
+public class OrderedSecondaryContact: Mappable {
+    public var name: String!
+    public var contacts: [Contacts]!
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         name <- map["name"]
         contacts <- map["contacts"]
     }

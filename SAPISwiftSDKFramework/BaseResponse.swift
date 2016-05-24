@@ -9,17 +9,17 @@
 import Foundation
 import ObjectMapper
 
-class BaseResponse: Mappable {
-    var date: String?
-    var time: Int?
-    var code: Int?
-    var message: String?
+public class BaseResponse: Mappable {
+    public var date: String?
+    public var time: Int?
+    public var code: Int?
+    public var message: String?
  
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
 
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         date <- map["date"]
         time <- map["time"]
         code <- map["code"]

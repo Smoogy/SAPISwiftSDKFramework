@@ -9,19 +9,19 @@
 import Foundation
 import ObjectMapper
 
-class Link: Mappable {
-    var type: String!
-    var url: String!
-    var displayValue: String!
-    var label: String?
-    var description: String?
-    var logo: String?
+public class Link: Mappable {
+    public var type: String!
+    public var url: String!
+    public var displayValue: String!
+    public var label: String?
+    public var description: String?
+    public var logo: String?
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         type <- map["type"]
         url <- map["url"]
         displayValue <- map["displayValue"]

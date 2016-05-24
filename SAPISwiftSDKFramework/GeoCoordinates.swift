@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class GeoCoordinates: Mappable {
-    var latitude: Double?
-    var longitude: Double?
+public class GeoCoordinates: Mappable {
+    public var latitude: Double?
+    public var longitude: Double?
     
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         latitude <- map["latitude"]
         longitude <- map["longitude"]
     }

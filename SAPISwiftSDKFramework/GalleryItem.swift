@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class GalleryItem: Mappable {
-    var thumbnailUrl: String!
-    var largeUrl: String!
-    var altText: String?
+public class GalleryItem: Mappable {
+    public var thumbnailUrl: String!
+    public var largeUrl: String!
+    public var altText: String?
 
-    required init?(_ map: Map) {
+    required public init?(_ map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         thumbnailUrl <- map["thumbnailUrl"]
         largeUrl <- map["largeUrl"]
         altText <- map["altText"]
