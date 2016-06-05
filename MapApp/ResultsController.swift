@@ -16,6 +16,11 @@ class ResultsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Bordered, target: self, action: #selector(ResultsController.back(_:)))
+        self.navigationItem.leftBarButtonItem = newBackButton;
+        
+        navigationController?.navigationBar.hidden = false
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
@@ -37,8 +42,10 @@ class ResultsController: UITableViewController {
         let result = results.results[indexPath.row]
         
         cell.title.text = result.name
-        cell.addressLine.text = result.primaryAddress?.addressLine
-        cell.logo.image = UIImage(data: NSData(contentsOfURL: NSURL(string: (result.businessLogo?.url)!)!)!)
+        
+        if let busLogo = result.businessLogo {
+            cell.logo?.image = UIImage(data: NSData(contentsOfURL: NSURL(string: (busLogo.url)!)!)!)
+        }
 
         return cell
     }
@@ -52,9 +59,15 @@ class ResultsController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "toItem") {
             let itemController = segue.destinationViewController as! ItemController
+            index = (tableView.indexPathForSelectedRow?.row)!
             
             itemController.item = results.results[index]
         }
+    }
+    
+    func back(sender: UIBarButtonItem) {
+        navigationController?.popToRootViewControllerAnimated(true)
+        //performSegueWithIdentifier("toStart", sender: nil)
     }
 
 }
@@ -62,7 +75,6 @@ class ResultsController: UITableViewController {
 class ItemTableViewCell : UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var addressLine: UILabel!
     @IBOutlet weak var logo: UIImageView!
     
     override func awakeFromNib() {

@@ -13,6 +13,7 @@ public class PrimaryAddress: Mappable {
     public var type: String!
     public var addressLine: String?
     public var suburb: String!
+    public var state: String?
     public var postcode: String!
     public var latitude: String?
     public var longitude: String?
@@ -28,6 +29,7 @@ public class PrimaryAddress: Mappable {
         type <- map["type"]
         addressLine <- map["addressLine"]
         suburb <- map["suburb"]
+        state <- map["state"]
         postcode <- map["postcode"]
         latitude <- map["latitude"]
         longitude <- map["longitude"]

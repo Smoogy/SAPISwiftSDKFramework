@@ -16,6 +16,7 @@ class LoadingController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.hidden = true
     }
 
     

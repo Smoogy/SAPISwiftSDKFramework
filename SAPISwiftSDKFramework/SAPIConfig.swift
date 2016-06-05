@@ -20,7 +20,7 @@ public class SAPIConfig {
                 base += "&rows=\(self.rows)"
             }
             if !query.isEmpty {
-                base += "&query=\(self.query)"
+                base += "&query=\(self.query.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!)"
             }
             
             return NSURL(string: "\(base)")!

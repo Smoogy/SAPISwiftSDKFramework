@@ -15,9 +15,14 @@ class ItemController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        name.adjustsFontSizeToFitWidth = true
         self.populateView()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.navigationBar.hidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +31,27 @@ class ItemController: ViewController {
     }
     
     func populateView() {
-        logo.image = UIImage(
-            data: NSData(
-                contentsOfURL: NSURL(
-                    string: (
-                        item.businessLogo?.url)!)!)!)
+        if let busLogo = item.businessLogo {
+            logo.image = UIImage(
+                data: NSData(
+                    contentsOfURL: NSURL(
+                        string: (
+                            busLogo.url)!)!)!)
+        }
         name.text = item.name!
+        
+        if let primaryAddress = item.primaryAddress {
+            if primaryAddress.addressLine != nil {
+                address.text = primaryAddress.addressLine
+            }
+            address.text = "\(address.text!) \(primaryAddress.suburb) \(primaryAddress.state!) \(primaryAddress.postcode)"
+        }
+        
     }
     
     @IBOutlet weak var logo: UIImageView!
     
     @IBOutlet weak var name: UILabel!
+    
+    @IBOutlet weak var address: UILabel!
 }
