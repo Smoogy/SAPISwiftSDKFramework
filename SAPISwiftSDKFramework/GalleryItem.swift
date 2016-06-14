@@ -18,7 +18,7 @@ public class GalleryItem: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         thumbnailUrl <- map["thumbnailUrl"]
         largeUrl <- map["largeUrl"]
         altText <- map["altText"]

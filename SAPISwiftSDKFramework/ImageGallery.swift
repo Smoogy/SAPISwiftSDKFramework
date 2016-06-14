@@ -16,7 +16,7 @@ public class ImageGallery: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         items <- map["items"]
     }
 }

@@ -17,7 +17,7 @@ public class Coordinates: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         centre <- map["centre"]
         street <- map["street"]
     }

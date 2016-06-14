@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum ErrorList: ErrorType {
-    case JSONError(description: String)
+enum ErrorList: ErrorProtocol {
+    case JsonError(description: String)
 }

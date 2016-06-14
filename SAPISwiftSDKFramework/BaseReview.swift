@@ -18,7 +18,7 @@ public class BaseReview: Mappable {
 
     }
 
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         namespace <- map["namespace"]
         ratingImageUrl <- map["ratingImageUrl"]
         ratingSmallImageUrl <- map["ratingSmallImageUrl"]        

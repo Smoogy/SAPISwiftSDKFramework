@@ -18,7 +18,7 @@ public class Category: Mappable {
         
     }
 
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         id <- map["id"]
         name <- map["name"]
         sensitive <- map["sensitive"]

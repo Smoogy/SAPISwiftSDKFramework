@@ -19,7 +19,7 @@ public class BaseResponse: Mappable {
 
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         date <- map["date"]
         time <- map["time"]
         code <- map["code"]

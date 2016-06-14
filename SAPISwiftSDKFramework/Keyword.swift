@@ -17,7 +17,7 @@ public class Keyword: Mappable {
         
     }
 
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         label <- map["label"]
         values <- map["values"]
     }

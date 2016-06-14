@@ -25,7 +25,7 @@ public class PrimaryAddress: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         type <- map["type"]
         addressLine <- map["addressLine"]
         suburb <- map["suburb"]

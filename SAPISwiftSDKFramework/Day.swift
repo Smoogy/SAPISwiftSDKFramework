@@ -17,7 +17,7 @@ public class Day: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         status <- map["status"]
         times <- map["times"]
     }

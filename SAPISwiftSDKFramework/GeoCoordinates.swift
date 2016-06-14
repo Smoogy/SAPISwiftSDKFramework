@@ -17,7 +17,7 @@ public class GeoCoordinates: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         latitude <- map["latitude"]
         longitude <- map["longitude"]
     }

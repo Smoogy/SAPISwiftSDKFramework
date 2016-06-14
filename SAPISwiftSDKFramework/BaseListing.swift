@@ -38,7 +38,7 @@ public class Listing: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         categories <- map["categories"]
         id <- map["id"]
         name <- map["name"]

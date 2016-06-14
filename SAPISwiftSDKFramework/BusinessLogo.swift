@@ -17,7 +17,7 @@ public class BusinessLogo: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         url <- map["url"]
         altText <- map["altText"]
     }

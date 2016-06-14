@@ -54,7 +54,7 @@ public final class Map {
 	/// The Key paramater can be a period separated string (ex. "distance.value") to access sub objects.
 	public subscript(key: String) -> Map {
 		// save key and value associated to it
-		let nested = key.containsString(".")
+		let nested = key.contains(".")
 		return self[key, nested: nested]
 	}
 	
@@ -71,7 +71,7 @@ public final class Map {
 			currentValue = isNSNull ? nil : object
 		} else {
 			// break down the components of the key that are separated by .
-			(isKeyPresent, currentValue) = valueFor(ArraySlice(key.componentsSeparatedByString(".")), dictionary: JSONDictionary)
+			(isKeyPresent, currentValue) = valueFor(ArraySlice(key.components(separatedBy: ".")), dictionary: JSONDictionary)
 		}
 		
 		return self
@@ -83,7 +83,7 @@ public final class Map {
 		return currentValue as? T
 	}
 	
-	public func valueOr<T>(@autoclosure defaultValue: () -> T) -> T {
+	public func valueOr<T>(@autoclosure _ defaultValue: () -> T) -> T {
 		return value() ?? defaultValue()
 	}
 	
@@ -97,9 +97,9 @@ public final class Map {
 			failedCount += 1
 			
 			// Returns dummy memory as a proxy for type `T`
-			let pointer = UnsafeMutablePointer<T>.alloc(0)
-			pointer.dealloc(0)
-			return pointer.memory
+			let pointer = UnsafeMutablePointer<T>(allocatingCapacity: 0)
+			pointer.deallocateCapacity(0)
+			return pointer.pointee
 		}
 	}
 	
@@ -110,7 +110,7 @@ public final class Map {
 }
 
 /// Fetch value from JSON dictionary, loop through keyPathComponents until we reach the desired object
-private func valueFor(keyPathComponents: ArraySlice<String>, dictionary: [String: AnyObject]) -> (Bool, AnyObject?) {
+private func valueFor(_ keyPathComponents: ArraySlice<String>, dictionary: [String: AnyObject]) -> (Bool, AnyObject?) {
 	// Implement it as a tail recursive function.
 	if keyPathComponents.isEmpty {
 		return (false, nil)
@@ -135,7 +135,7 @@ private func valueFor(keyPathComponents: ArraySlice<String>, dictionary: [String
 }
 
 /// Fetch value from JSON Array, loop through keyPathComponents them until we reach the desired object
-private func valueFor(keyPathComponents: ArraySlice<String>, array: [AnyObject]) -> (Bool, AnyObject?) {
+private func valueFor(_ keyPathComponents: ArraySlice<String>, array: [AnyObject]) -> (Bool, AnyObject?) {
 	// Implement it as a tail recursive function.
 	
 	if keyPathComponents.isEmpty {

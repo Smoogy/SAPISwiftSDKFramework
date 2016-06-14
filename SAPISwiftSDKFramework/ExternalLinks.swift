@@ -16,7 +16,7 @@ public class ExternalLinks: Mappable {
         
     }
 
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         links <- map["links"]
     }    
 }

@@ -18,7 +18,7 @@ public class ReviewSummary: BaseReview {
         super.init(map)
     }
     
-    override public func mapping(map: Map) {
+    override public func mapping(_ map: Map) {
         super.mapping(map)
 
         reviewCount <- map["reviewCount"]

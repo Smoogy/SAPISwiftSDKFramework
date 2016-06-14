@@ -14,13 +14,13 @@ public class BusinessInfo: Mappable {
     public var abn: String?
     public var acn: String?
     public var numberOfEmployees: String?
-    public var dateEstablished: NSDate?
+    public var dateEstablished: Date?
 
     required public init?(_ map: Map) {
         
     }
 
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         legalId <- map["legalId"]
         abn <- map["abn"]
         acn <- map["acn"]

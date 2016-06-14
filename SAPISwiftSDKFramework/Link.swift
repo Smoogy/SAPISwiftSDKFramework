@@ -21,7 +21,7 @@ public class Link: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         type <- map["type"]
         url <- map["url"]
         displayValue <- map["displayValue"]

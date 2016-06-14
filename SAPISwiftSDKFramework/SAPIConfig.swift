@@ -9,7 +9,7 @@
 import Foundation
 
 public class SAPIConfig {
-    public var url: NSURL {
+    public var url: URL {
         get {
             var base: String =  "\(self.baseUrl)\(self.apiKey)"
             
@@ -20,10 +20,10 @@ public class SAPIConfig {
                 base += "&rows=\(self.rows)"
             }
             if !query.isEmpty {
-                base += "&query=\(self.query.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!)"
+                base += "&query=\(self.query.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)!)"
             }
             
-            return NSURL(string: "\(base)")!
+            return URL(string: "\(base)")!
         }
     }
 
@@ -47,7 +47,7 @@ public class SAPIConfig {
     
     private var SAPIConfig: NSDictionary {
         get {
-            if let config = NSBundle(identifier: "CallanB.SAPISwiftSDKFramework")?.infoDictionary {
+            if let config = Bundle(identifier: "CallanB.SAPISwiftSDKFramework")?.infoDictionary {
                 return NSDictionary(dictionary: config["SAPIConfig"] as! NSDictionary)
             }
             return NSDictionary()

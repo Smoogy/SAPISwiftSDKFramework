@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class SAPI {
-    public var url: NSURL
+    public var url: URL
     public var config: SAPIConfig = SAPIConfig()
     public var page: Int {
         get {
@@ -41,20 +41,20 @@ public class SAPI {
     public init(page: Int) {
         config.page = page
 
-        self.url = config.url
+        self.url = config.url as URL
     }
     
     public init(rows: Int) {
         config.rows = rows
         
-        self.url = config.url
+        self.url = config.url as URL
     }
     
     public init(page: Int, rows: Int) {
         config.page = page
         config.rows = rows
 
-        self.url = config.url
+        self.url = config.url as URL
     }
     
     public init(page: Int, rows: Int, query: String) {
@@ -62,7 +62,7 @@ public class SAPI {
         config.rows = rows
         config.query = query
 
-        self.url = config.url
+        self.url = config.url as URL
     }
     
     convenience public init() {
@@ -78,14 +78,14 @@ public class SAPI {
         return self.performSearch(url)
     }
     
-    private func performSearch (inputUrl: NSURL!) -> SAPIResponse {
-        let jdata = NSData(contentsOfURL: inputUrl)!
+    private func performSearch (_ inputUrl: URL!) -> SAPIResponse {
+        let jdata = try? Data(contentsOf: inputUrl)
         var results: SAPIResponse!
         debugPrint("Attempting search with the URL: \(inputUrl)")
         
         do {
-            try results = parseJSON(jdata)
-        } catch ErrorList.JSONError (let description) {
+            try results = parseJSON(jdata!)
+        } catch ErrorList.JsonError (let description) {
             print(description)
         }
         catch {
@@ -95,17 +95,17 @@ public class SAPI {
         return results
     }
 
-    private func parseJSON(inputData: NSData) throws -> SAPIResponse {
-        let jsonData: AnyObject = try NSJSONSerialization.JSONObjectWithData(inputData, options: .MutableContainers)
+    private func parseJSON(_ inputData: Data) throws -> SAPIResponse {
+        let jsonData: AnyObject = try JSONSerialization.jsonObject(with: inputData, options: .mutableContainers)
 
         if let _ = jsonData as? NSDictionary {
             if let map = Mapper<SAPIResponse>().map(jsonData) as SAPIResponse? {
                 return map
             } else {
-                throw ErrorList.JSONError(description: "Error occurred when mapping JSON to object")
+                throw ErrorList.JsonError(description: "Error occurred when mapping JSON to object")
             }
         } else {
-            throw ErrorList.JSONError(description: "Error occurred when casting JSON to an NSDictionary")
+            throw ErrorList.JsonError(description: "Error occurred when casting JSON to an NSDictionary")
         }
     }
 }

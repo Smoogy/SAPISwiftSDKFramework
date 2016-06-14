@@ -18,7 +18,7 @@ public class PrimaryContact: Mappable {
         
     }
     
-    public func mapping(map: Map) {
+    public func mapping(_ map: Map) {
         type <- map["type"]
         value <- map["value"]
         description <- map["description"]

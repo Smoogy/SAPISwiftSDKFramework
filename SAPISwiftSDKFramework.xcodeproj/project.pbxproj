@@ -33,6 +33,8 @@
 		A341F06E1C8D9CD30029DBA8 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0621C8D97650029DBA8 /* Coordinates.swift */; };
 		A341F06F1C8D9CD30029DBA8 /* GeoCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341F0641C8D97940029DBA8 /* GeoCoordinates.swift */; };
 		A35CBB151CEDDBC100932D6A /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35CBB131CEDDBC100932D6A /* ResultsController.swift */; };
+		A37D18511D0592EE008E4EC2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37D18501D0592EE008E4EC2 /* MapKit.framework */; };
+		A37D18531D059A6D008E4EC2 /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D18521D059A6D008E4EC2 /* MapViewExtension.swift */; };
 		A38F94881CE20493009219D0 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C069AF1CE1FDFA005577AA /* Day.swift */; };
 		A3A612971C8B151F0025D0FF /* SAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C668511C7DA38B007B11A6 /* SAPIConfig.swift */; };
 		A3A7132F1CE34AA5005E970E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C069B11CE1FE6F005577AA /* Time.swift */; };
@@ -148,6 +150,8 @@
 		A3557B6F1CD61F1400222FA0 /* ExternalLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalLinks.swift; sourceTree = "<group>"; };
 		A3557B711CD61F2D00222FA0 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		A35CBB131CEDDBC100932D6A /* ResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+		A37D18501D0592EE008E4EC2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A37D18521D059A6D008E4EC2 /* MapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
 		A3A713301CE34AE7005E970E /* BaseReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseReview.swift; sourceTree = "<group>"; };
 		A3A713331CE34E53005E970E /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		A3B14D311CEC84970024285A /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37D18511D0592EE008E4EC2 /* MapKit.framework in Frameworks */,
 				A3DA7C941CF1E4730001CD54 /* ObjectMapper.framework in Frameworks */,
 				A3DA7C921CF1E42D0001CD54 /* Pods_SAPISwiftSDKFramework.framework in Frameworks */,
 				A3B14D521CEC85020024285A /* SAPISwiftSDKFramework.framework in Frameworks */,
@@ -278,6 +283,7 @@
 				A3B14D541CEC921A0024285A /* LoadingController.swift */,
 				A35CBB131CEDDBC100932D6A /* ResultsController.swift */,
 				A33DDA501CF319B10009ECCD /* ItemController.swift */,
+				A37D18521D059A6D008E4EC2 /* MapViewExtension.swift */,
 			);
 			path = MapApp;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 		E2F211D989E05BC9ECF56915 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A37D18501D0592EE008E4EC2 /* MapKit.framework */,
 				A3DA7C931CF1E4730001CD54 /* ObjectMapper.framework */,
 				A3C054FB1C85BA2400979B84 /* Pods_SAPISwiftSDKFrameworkTests.framework */,
 				A3C054F91C85BA1500979B84 /* UIKit.framework */,
@@ -464,13 +471,16 @@
 				TargetAttributes = {
 					A3B14D301CEC84970024285A = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					A3B14D431CEC84970024285A = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = A3B14D301CEC84970024285A;
 					};
 					A3C668301C7DA1E6007B11A6 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 					A3F53D7D1C85BEFA00B93856 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -630,6 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35CBB151CEDDBC100932D6A /* ResultsController.swift in Sources */,
+				A37D18531D059A6D008E4EC2 /* MapViewExtension.swift in Sources */,
 				A3B14D551CEC921A0024285A /* LoadingController.swift in Sources */,
 				A3B14D361CEC84970024285A /* ViewController.swift in Sources */,
 				A33DDA521CF31B290009ECCD /* ItemController.swift in Sources */,
@@ -764,6 +775,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CallanB.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -777,6 +789,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CallanB.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -790,6 +803,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CallanB.MapAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapApp.app/MapApp";
 			};
 			name = Debug;
@@ -804,6 +818,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CallanB.MapAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapApp.app/MapApp";
 			};
 			name = Release;
@@ -925,6 +940,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -953,6 +969,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
