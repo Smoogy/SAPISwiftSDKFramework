@@ -69,16 +69,20 @@ public class SAPI {
         self.init(page: 1, rows: 100, query: "")
     }
     
-    /**
-     Performs search against the SAPI Search endpoint.
-     
-     - returns: An SAPIResponse object.
-     */
+
+    /// Performs a search with the allocated the assigned url.
+    /// - returns: SAPIResponse
     public func performSearch() -> SAPIResponse {
         return self.performSearch(url)
     }
-    
-    private func performSearch (_ inputUrl: URL!) -> SAPIResponse {
+	
+	
+    /// Performs a search with an URL as a parameter.
+    ///
+    /// - parameter inputUrl:	The compiled URL to be queried.
+    ///
+    /// - returns: SAPIResponse
+    public func performSearch (_ inputUrl: URL!) -> SAPIResponse {
         let jdata = try? Data(contentsOf: inputUrl)
         var results: SAPIResponse!
         debugPrint("Attempting search with the URL: \(inputUrl)")
@@ -87,8 +91,7 @@ public class SAPI {
             try results = parseJSON(jdata!)
         } catch ErrorList.JsonError (let description) {
             print(description)
-        }
-        catch {
+        } catch {
             print("An error occurred.")
         }
     
@@ -96,16 +99,13 @@ public class SAPI {
     }
 
     private func parseJSON(_ inputData: Data) throws -> SAPIResponse {
-        let jsonData: AnyObject = try JSONSerialization.jsonObject(with: inputData, options: .mutableContainers)
-
-        if let _ = jsonData as? NSDictionary {
-            if let map = Mapper<SAPIResponse>().map(jsonData) as SAPIResponse? {
-                return map
-            } else {
-                throw ErrorList.JsonError(description: "Error occurred when mapping JSON to object")
-            }
-        } else {
-            throw ErrorList.JsonError(description: "Error occurred when casting JSON to an NSDictionary")
-        }
+        let jsonData: AnyObject = try JSONSerialization.jsonObject(
+			with: inputData, options: .mutableContainers)
+		
+		guard let map = Mapper<SAPIResponse>().map(jsonData) else {
+          throw ErrorList.JsonError(description: "Error occurred when mapping JSON to object")
+		}
+		
+		return map
     }
 }

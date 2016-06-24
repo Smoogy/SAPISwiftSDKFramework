@@ -20,7 +20,7 @@ public class PrimaryAddress: Mappable {
     public var geoCodeGranularity: String!
     public var mappable: Bool!
     public var coordinates: Coordinates?
-
+	
     required public init?(_ map: Map) {
         
     }

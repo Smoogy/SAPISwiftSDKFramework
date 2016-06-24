@@ -17,12 +17,12 @@ class ResultsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Bordered, target: self, action: #selector(ResultsController.back(_:)))
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.bordered, target: self, action: #selector(ResultsController.back(_:)))
         self.navigationItem.leftBarButtonItem = newBackButton;
         
-        navigationController?.navigationBar.hidden = false
+        navigationController?.navigationBar.isHidden = false
         
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         tableView.reloadData()
     }
@@ -32,41 +32,41 @@ class ResultsController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results.results.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("item") as! ItemTableViewCell!
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "item") as! ItemTableViewCell!
         
         let result = results.results[indexPath.row]
         
-        cell.title.text = result.name
+        cell?.title.text = result.name
         
         if let busLogo = result.businessLogo {
-            cell.logo?.image = UIImage(data: NSData(contentsOfURL: NSURL(string: (busLogo.url)!)!)!)
+            try? cell?.logo?.image = UIImage(data: Data(contentsOf: URL(string: (busLogo.url)!)!))
         }
 
-        return cell
+        return cell!
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
-        index = indexPath.row
+        index = (indexPath as NSIndexPath).row
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "toItem") {
             let itemController = segue.destinationViewController as! ItemController
-            index = (tableView.indexPathForSelectedRow?.row)!
+            index = ((tableView.indexPathForSelectedRow as NSIndexPath?)?.row)!
             
             itemController.item = results.results[index]
         }
     }
     
-    func back(sender: UIBarButtonItem) {
-        navigationController?.popToRootViewControllerAnimated(true)
+    func back(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: true)
         //performSegueWithIdentifier("toStart", sender: nil)
     }
 
@@ -82,7 +82,7 @@ class ItemTableViewCell : UITableViewCell {
         
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 import SAPISwiftSDKFramework
 
 class ItemController: ViewController {
@@ -15,14 +16,15 @@ class ItemController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        map.delegate = self
         
         name.adjustsFontSizeToFitWidth = true
         self.populateView()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        navigationController?.navigationBar.hidden = false
+        navigationController?.navigationBar.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,12 +33,26 @@ class ItemController: ViewController {
     }
     
     func populateView() {
+        if let lat = Double((item.primaryAddress?.latitude)!) {
+            if let long = Double((item.primaryAddress?.longitude)!) {
+                
+                let vicinity = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                
+                let coordinateRegion = MKCoordinateRegionMakeWithDistance(vicinity, 1000 * 2.0, 1000 * 2.0)
+				
+				let location = BusinessLocation(title: item.name, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: long), info: "This is an awesome test.")
+                map.addAnnotation(location)
+
+                map.setRegion(coordinateRegion, animated: true)
+            }
+        }
+        
         if let busLogo = item.businessLogo {
-            logo.image = UIImage(
-                data: NSData(
-                    contentsOfURL: NSURL(
+             try? logo.image = UIImage(
+                data: Data(
+                    contentsOf: URL(
                         string: (
-                            busLogo.url)!)!)!)
+                            busLogo.url)!)!))
         }
         name.text = item.name!
         
@@ -44,7 +60,7 @@ class ItemController: ViewController {
             if primaryAddress.addressLine != nil {
                 address.text = primaryAddress.addressLine
             }
-            address.text = "\(address.text!) \(primaryAddress.suburb) \(primaryAddress.state!) \(primaryAddress.postcode)"
+            address.text = "\(address.text!) \(primaryAddress.suburb ?? "") \(primaryAddress.state!) \(primaryAddress.postcode ?? "")"
         }
         
     }
@@ -54,4 +70,6 @@ class ItemController: ViewController {
     @IBOutlet weak var name: UILabel!
     
     @IBOutlet weak var address: UILabel!
+    
+    @IBOutlet weak var map: MKMapView!
 }

@@ -16,14 +16,14 @@ class LoadingController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.hidden = true
+        navigationController?.navigationBar.isHidden = true
     }
 
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         self.performSearch(searchQuery)
         
-        self.performSegueWithIdentifier("resultsSegue", sender: self)
+        self.performSegue(withIdentifier: "resultsSegue", sender: self)
 
     }
     override func didReceiveMemoryWarning() {
@@ -31,13 +31,13 @@ class LoadingController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func performSearch(query: String) {
+    func performSearch(_ query: String) {
         let test = SAPI(page: 1, rows: 5, query: searchQuery)
         
         results = test.performSearch()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "resultsSegue") {
             let resultsController = segue.destinationViewController as! ResultsController
             

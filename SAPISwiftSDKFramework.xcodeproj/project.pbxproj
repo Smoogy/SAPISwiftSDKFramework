@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E0D43E2CFD86E3CF2BF5756 /* Pods_SAPISwiftSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C66E291F48A7E19279057A /* Pods_SAPISwiftSDKFramework.framework */; };
+		A319A3041D1D6BED005CD36A /* BusinessLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A319A3031D1D6BED005CD36A /* BusinessLocation.swift */; };
+		A319A3051D1D6BED005CD36A /* BusinessLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A319A3031D1D6BED005CD36A /* BusinessLocation.swift */; };
 		A32CE0681C8C420100AF56B8 /* SAPIQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CE0671C8C420100AF56B8 /* SAPIQueryBuilder.swift */; };
 		A33DDA521CF31B290009ECCD /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DDA501CF319B10009ECCD /* ItemController.swift */; };
 		A340998A1CE20532002B2973 /* ReviewSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34099891CE20532002B2973 /* ReviewSummary.swift */; };
@@ -130,6 +132,7 @@
 		22C66E291F48A7E19279057A /* Pods_SAPISwiftSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAPISwiftSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9456D6AD03FDFEE236EA9610 /* Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		971DF7A692005FACE078595F /* Pods-SAPISwiftSDKFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPISwiftSDKFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAPISwiftSDKFrameworkTests/Pods-SAPISwiftSDKFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		A319A3031D1D6BED005CD36A /* BusinessLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLocation.swift; sourceTree = "<group>"; };
 		A32CE0671C8C420100AF56B8 /* SAPIQueryBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPIQueryBuilder.swift; sourceTree = "<group>"; };
 		A33DDA501CF319B10009ECCD /* ItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
 		A34099891CE20532002B2973 /* ReviewSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewSummary.swift; sourceTree = "<group>"; };
@@ -284,6 +287,7 @@
 				A35CBB131CEDDBC100932D6A /* ResultsController.swift */,
 				A33DDA501CF319B10009ECCD /* ItemController.swift */,
 				A37D18521D059A6D008E4EC2 /* MapViewExtension.swift */,
+				A319A3031D1D6BED005CD36A /* BusinessLocation.swift */,
 			);
 			path = MapApp;
 			sourceTree = "<group>";
@@ -644,6 +648,7 @@
 				A3B14D551CEC921A0024285A /* LoadingController.swift in Sources */,
 				A3B14D361CEC84970024285A /* ViewController.swift in Sources */,
 				A33DDA521CF31B290009ECCD /* ItemController.swift in Sources */,
+				A319A3051D1D6BED005CD36A /* BusinessLocation.swift in Sources */,
 				A3B14D341CEC84970024285A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +675,7 @@
 				A3C069B21CE1FE6F005577AA /* Time.swift in Sources */,
 				A3B711A31CD76EB50055B202 /* OrderedProductKeywords.swift in Sources */,
 				A3A713341CE34E53005E970E /* Review.swift in Sources */,
+				A319A3041D1D6BED005CD36A /* BusinessLocation.swift in Sources */,
 				A3FCDCD71C8B0F8C0076AB62 /* SAPIErrorListEnum.swift in Sources */,
 				A340998A1CE20532002B2973 /* ReviewSummary.swift in Sources */,
 				A341F0551C8D902F0029DBA8 /* BusinessLogo.swift in Sources */,
